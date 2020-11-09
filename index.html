@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Plantopia</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2> Plantopia</h2>
+        <h2> Your Plant Search Begins Here.</h2>
+
+        <form id="js-form">
+
+            <label class="search-term" for="common_name">Search by plant name</label>
+            <input class="common-name input" type="text" name="common_name" id="common_name" placeholder="Plant common name" />
+
+            <label class="search-term" for="common_name">Search by plant name</label>
+            <input class="scientific-name input" type="text" name="scientific_name" id="scientific_name" placeholder="Plant Scientific name" />
+
+            <!-- <label class="search-term" for="duration">Duration</label>
+      <input class="duration input" type="text" name="duration" id="duration" placeholder="Duration" list="duration-list">
+        <datalist id="duration-list">
+          <option value="Annual">
+          <option value="Biennial">
+          <option value="Perennial">
+        </datalist> -->
+
+            <label class="search-term" for="toxicity">Toxicity</label>
+            <input class="toxicity input" type="text" name="toxicity" id="toxicity" placeholder="Toxicity" list="toxicity-list">
+            <datalist id="toxicity-list">
+          <option value="Low">
+          <option value="Medium">
+          <option value="High">
+        </datalist>
+
+            <label class="search-term" for="light">Light</label>
+            <input class="light input" type="number" name="light" id="light" placeholder="light" list="light-list">
+            <datalist id="light-list">
+          <option value="0">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+          <option value="4">
+          <option value="5">
+          <option value="6">
+          <option value="7">
+          <option value="8">
+          <option value="9">
+          <option value="10">
+        </datalist>
+
+            <label class="search-term" for="flower_color">Color</label>
+            <input class="color input" type="text" name="flower_color" id="flower_color" placeholder="Color" list="color-list">
+            <datalist id="color-list">
+            <option value="Red">
+            <option value="White">
+            <option value="Brown">
+            <option value="Orange">
+            <option value="Yellow">
+            <option value="Lime">
+            <option value="Green">
+            <option value="Cyan">
+            <option value="Blue">
+            <option value="Purple">
+            <option value="Magenta">
+            <option value="Grey">
+            <option value="Black">
+          </datalist>
+
+            <input id="submit-btn" type="submit" value="Submit">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+
+        <section id="trefle-results" class="hidden">
+            <h2>Results</h2>
+            <ul id="results-list">
+            </ul>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
